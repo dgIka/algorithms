@@ -2,9 +2,16 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class greedNum {
     public static void main(String args[]) {
+        HashMap<Integer, Integer> stuff = new HashMap<>();
+        stuff.put(2, 9);
+        stuff.put(4, 16);
+        stuff.put(3, 14);
+        stuff.put(6, 30);
+
         System.out.println(greedNumbers(23432532));
         System.out.println(greedNumbers(123));
         int[] digits = {3, 1, 7, 9, 9, 5};
